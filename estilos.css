@@ -1,0 +1,238 @@
+html {
+    scroll-padding-top: 80px;
+    /* Ajusta según el alto de tu encabezado */
+}
+/* Estilos generales */
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+.header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav {
+    flex-grow: 1;
+    /* Ocupa el espacio restante */
+    display: flex;
+    justify-content: center;
+    /* Centra la lista de navegación */
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+    /* Espaciado entre los elementos */
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #ff6600;
+}
+
+/* Botones Login/Registro */
+.auth-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-buttons button:hover {
+    background-color: #ff4500;
+}
+
+/* Sección principal */
+#bienvenida {
+    text-align: center;
+    margin-top: 120px;
+    padding: 20px;
+}
+
+#bienvenida h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#bienvenida p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Productos Más Destacados */
+#productos {
+    margin: 50px 0;
+    text-align: center;
+}
+
+#productos h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.producto {
+    margin: 10px;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.producto h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.producto p {
+    font-size: 16px;
+    color: #777;
+    margin: 5px 0;
+}
+
+.producto p:last-child {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Formulario de contacto */
+#contacto {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#contacto h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#contacto form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contacto form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+#contacto form input,
+#contacto form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contacto form button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contacto form button:hover {
+    background-color: #ff4500;
+}
+
+/* Redes sociales */
+#redes {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#redes h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#redes ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#redes ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#redes ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#redes ul li a:hover {
+    color: #ff6600;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+}
