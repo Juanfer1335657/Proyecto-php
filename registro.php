@@ -10,20 +10,23 @@ die("Error de conexión: " . $conn->connect_error);
 }
 // Verificar si se recibió el dato del formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-if (isset($_POST['tienda_devops'])) {
-$tienda_devops = $conn->real_escape_string($_POST['tienda_devops']);
+if (isset($_POST['nombre']) && isset($_POST['email']) && isset($_POST['telefono'])) {
+$nombre = $conn->real_escape_string($_POST['nombre']);
+$email = $conn->real_escape_string($_POST['email']);
+$telefono = $conn->real_escape_string($_POST['telefono']);
+
 // Cambia el nombre de la tabla si es necesario
-$sql = "INSERT INTO tienda_devops (ID_Cliente, Nombre, Email, Telefono ) VALUES ('$tienda_devops')";
+$sql = "INSERT INTO cliente (Nombre, Email, Telefono ) VALUES ('$nombre', '$email', '$telefono')";
 
 
 
 if ($conn->query($sql) === TRUE) {
-echo "Tienda guardada exitosamente.";
+echo "Cliente guardado exitosamente.";
 } else {
-echo "guardar la tienda: " . $conn->error;
+echo "guardar cliente" . $conn->error;
 }
 } else {
-echo "Tienda guardada exitosamente.";
+echo "cliente guardado";
 }
 }
 $conn->close();

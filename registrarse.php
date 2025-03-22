@@ -18,15 +18,15 @@
                     <div class="card-body">
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre Completo</label>
-                            <input type="text" class="form-control" id="nombre" name="Nombre" placeholder="Ingrese su nombre completo" required>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" name="Email" placeholder="Ingrese su correo electrónico" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
                         </div>
                         <div class="mb-3">
                             <label for="telefono" class="form-label">Telefono</label>
-                            <input type="text" class="form-control" id="telefono" name="Telefono" placeholder="Ingrese su telefono" required>
+                            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su telefono" required>
                         </div>
                         
                         <button type="submit" class="btn btn-primary">Registrarse</button>
